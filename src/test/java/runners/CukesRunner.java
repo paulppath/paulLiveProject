@@ -16,8 +16,7 @@ import org.junit.runner.RunWith;
         glue = "step_definitions",
         stepNotifications = true,
         dryRun = false
-        ,tags = "@US1022"
-//        ,tags = "@smoke and @regression"
+        ,tags = "@AD5"
         // you can combine tags with "and, or, and not"
 )
 public class CukesRunner {
