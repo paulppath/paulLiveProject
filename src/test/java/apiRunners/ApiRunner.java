@@ -9,10 +9,14 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty",
                 "html:target/report.html",
+                "json:target/cucumber-reports/cucumber.json",
+                "rerun:target/rerun.txt"
         },
-        features = "@target/rerun.txt",
+        features = "src/test/resources/apiFeatures",
         glue = "step_definitions",
-        stepNotifications = true
+        stepNotifications = true,
+        dryRun = false
+        ,tags = "@test1"
 )
-public class RerunFailed {
+public class ApiRunner {
 }

@@ -1,4 +1,4 @@
-package runners;
+package UIRunners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -12,11 +12,11 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber-reports/cucumber.json",
                 "rerun:target/rerun.txt"
         },
-        features = "src/test/resources/features",
+        features = "src/test/resources/uiFeatures",
         glue = "step_definitions",
         stepNotifications = true,
         dryRun = false
-        ,tags = "@AD5"
+        ,tags = "@AD3"
         // you can combine tags with "and, or, and not"
 )
 public class CukesRunner {
